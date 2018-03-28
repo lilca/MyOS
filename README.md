@@ -9,6 +9,7 @@
 　nasm
 
 マスターブートレコードを実行
+　haltだけ
 
 参考文献
-　OSDEV(https://wiki.osdev.org/Expanded_Main_Page)
+　OSDev Wiki (https://wiki.osdev.org/Expanded_Main_Page)
