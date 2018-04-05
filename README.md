@@ -6,12 +6,14 @@
  - 稼働マシン：Virtualbox([設定はこちら](doc/virtualbox))  
 
 
-## 仮想ディスク作成   
+## 仮想ディスク作成  
  - nasm  
-  
-## マスターブートレコードを実行   
+
+## マスターブートレコードを実行  
  1. haltだけ  
-  
-## 参考文献   
- - OSDev Wiki (https://wiki.osdev.org/Expanded_Main_Page)  
-  
+
+## 参考文献  
+ - OSDev Wiki (https://wiki.osdev.org/Expanded_Main_Page)
+ - 0から作るOS開発 (http://softwaretechnique.jp/OS_Development/index.html)
+ - (AT)-BIOS in OSWiki (http://oswiki.osask.jp/?FrontPage) 
+
