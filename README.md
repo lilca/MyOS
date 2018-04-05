@@ -7,8 +7,8 @@
 
 
 ## 仮想ディスク作成  
- - [nasmで実行ファイル作成](doc/makebin)  
- - [VirtualBox用の仮想ディスクに変換(doc/makedisk)  
+ - [nasmで実行ファイル作成](doc/makebin.md)  
+ - [VirtualBox用の仮想ディスクに変換](doc/makedisk.md)  
 
 ## マスターブートレコードを実行  
  1. [何もしないで終了](doc/halt.md)  
