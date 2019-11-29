@@ -12,11 +12,21 @@ msg01      db " *** MyOS Start ***"
 
     ;--- スタート地点
 _start:
+    xor dh, dh
+    mov [boot_drive], dx
     ;--- ビデオモード設定
+    push ax
     mov ah, 0
     mov al, 0x12   ;640*480(80*30)*16
     int 0x10
+    pop ax
     ;--- 文字列出力
+    push ax
+    push bx
+    push cx
+    push dx
+    push bp
+    push es
     xor ax, ax
     mov es, ax
     mov ah, 0x13
@@ -28,7 +38,12 @@ _start:
     mov dl, 1     ;x座標
     mov bp, msg01
     int 0x10
-
+    pop es
+    pop bp
+    pop dx
+    pop cx
+    pop bx
+    pop ax
     hlt           ;CPU停止（これがないと、以降の不確定領域を実行してしまう。）
 
 TIMES 510 - ($ - $$) db 0
